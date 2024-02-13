@@ -1,12 +1,24 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+interface NavItemProps {
+  href: string;
+  title: string;
+}
+function NavItem({ href, title }: NavItemProps) {
+  return (
+    <li className="">
+      <a href={href}>{title}</a>
+    </li>
+  );
+}
 function Navbar() {
-  return ( 
-          <nav className="w-full pt-3 pb-2 relative flex flex-wrap items-center justify-between transition-all duration-300">
-            <a href="index.html" className="block pt-1.5 pb-1.5 mr-4 text-xl whitespace-nowrap">
-              <img src="assets/images/logo.svg" alt="Home" />
-            </a>
+  return (
+    <nav className="lg:flex-row lg:flex-nowrap lg:justify-start relative flex flex-wrap items-center justify-between pt-[10px] pb-[10px] transition-all duration-300 ease-in-out ">
+      <a
+        href="index.html"
+        className="block pt-[0.3125rem] pb-[0.3125rem] mr-[1rem] text-xl whitespace-nowrap"
+      >
+        <img src="assets/images/logo.svg" alt="Home" />
+      </a>
+      {/* 
             <div className="sm:hidden">
               <button type="button"
                 data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation"
@@ -17,18 +29,17 @@ function Navbar() {
                 </span>
               </button>
             </div>
-            <div id="navbar-collapse-with-animation" className="text-white hs-collapse hidden box-border basis-full flex-grow items-center">
-              <ul className="flex flex-col pl-0 mb-0 list-none mr-0 ml-auto mt-[10px]">
-                <li className="mt-[10px] mb-[10px] mr-[8px] ml-[8px] list-none list-item">
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                  <a href="#service">Services</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        
+            */}
+      <div
+        id="navbar-collapse-with-animation"
+        className="hs-collapse md:basis-auto md:flex flex-grow items-center basis-full"
+      >
+        <ul className="list-none mb-0 pl-0 flex flex-col ml-auto md:flex-row">
+          <NavItem href="#about" title="Abount" />
+          <NavItem href="#service" title="Services" />
+        </ul>
+      </div>
+    </nav>
   );
 }
 export default Navbar;
