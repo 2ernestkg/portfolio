@@ -6,6 +6,15 @@ module.exports = {
   ],
   plugins: [require("@tailwindcss/forms"), require("preline/plugin")],
   theme: {
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "100%": "100% 100%",
+    },
+    fontFamily: {
+      roboto: ["Roboto", "sans-serif"],
+    },
     screens: {
       xs: "576px",
       sm: "768px",
