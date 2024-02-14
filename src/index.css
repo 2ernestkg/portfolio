@@ -34,11 +34,17 @@ body {
   line-height: 24px;
   font-weight: 500;
   overflow-x: hidden !important;
-  text-align: center;
+  text-align: left;
   position: relative;
   color: #000000;
   opacity: 1;
   background: #07011e;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
 }
 
 h1,
