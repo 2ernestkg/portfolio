@@ -9,7 +9,7 @@ function NavItem({ href, title }: NavItemProps) {
   return (
     <li className="mx-[8px] my-[16px] list-none box-border">
       <a
-        className="md:px-2 block px-4 py-2 text-[14px] font-semibold leading-[0.71] tracking-normal opacity-90 text-white font-roboto"
+        className="md:px-2 block px-0 py-2 text-[14px] font-semibold leading-[0.71] tracking-normal opacity-90 text-white font-roboto"
         href={href}
       >
         {title}
@@ -22,7 +22,7 @@ function Navbar() {
     <nav className="lg:flex-row lg:flex-nowrap lg:justify-start w-full relative flex flex-wrap items-center justify-between py-[10px] px-0 transition-all duration-300 ease-in-out ">
       <a
         href="index.html"
-        className="block pt-[0.3125rem] pb-[0.3125rem] mr-[1rem] text-xl whitespace-nowrap"
+        className="block pt-[0.3125rem] pb-[0.3125rem] mr-[1rem] text-xl leading-[inherit] whitespace-nowrap"
       >
         <img src="assets/images/logo.svg" alt="Home" />
       </a>

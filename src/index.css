@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,6 +19,12 @@
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -24,7 +34,7 @@ body {
   line-height: 24px;
   font-weight: 500;
   overflow-x: hidden !important;
-  text-align: left;
+  text-align: center;
   position: relative;
   color: #000000;
   opacity: 1;
