@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import "preline/preline";
 import { IStaticMethods } from "preline/preline";
 import { useEffect } from "react";
+import Home from "pages/Home";
 
 declare global {
   interface Window {
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <Header />
+      <Home />
       <About />
     </>
   );
