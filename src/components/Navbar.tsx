@@ -42,7 +42,7 @@ function Navbar() {
         className="hs-collapse hidden basis-full md:basis-auto md:flex flex-grow items-center"
       >
         <ul className="list-none m-0 p-0 flex flex-col mt-[10px] md:mt-0 ml-auto md:flex-row">
-          <NavItem href="#about" title="Abount" />
+          <NavItem href="#about" title="About" />
           <NavItem href="#service" title="Services" />
         </ul>
       </div>
