@@ -1,5 +1,8 @@
 import About from "pages/About";
 import Header from "pages/Header";
+import Service from "pages/Service";
+import Portfolio from "pages/Portfolio";
+import Contact from "pages/Contact";
 import { useLocation } from "react-router-dom";
 
 import "preline/preline";
@@ -23,6 +26,9 @@ function App() {
     <>
       <Header />
       <About />
+      <Service />
+      <Portfolio />
+      <Contact />
     </>
   );
 }

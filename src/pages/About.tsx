@@ -62,7 +62,7 @@ function About() {
           <div className="flex flex-wrap -mr-[15px] -ml-[15px]">
             <div className="sm:flex-grow-0 sm:flex-shrink-0 sm:basis-[50%] relative w-full min-h-[1px] px-[15px]">
               <div className="py-[50px] px-0 pt-[100px] sm:py-[140px] sm:px-0">
-                <h1 className="md:text-[40px] lg:text-[50px] font-bold leading-[1.28] -tracking-[1.25px] mb-5 sm:mb-[20px] md:mb-10 text-white text-opacity-70">
+                <h1 className="sm:text-[40px] lg:text-[50px] font-bold leading-[1.28] -tracking-[1.25px] mb-5 sm:mb-[20px] md:mb-10 text-white text-opacity-70">
                   Hi, I’m Ernest Kuttubaev <br />
                   <span ref={typewriterRef} className="text-white"></span>
                   <span ref={cursorRef} className="text-white">
@@ -86,10 +86,14 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="sm:flex-grow-0 sm:flex-shrink-0 sm:basis-[50%] relative w-full min-h-[1px] px-[15px]">
-              <div className="pt-[18px] ml-0 w-full h-full sm:pt-18px sm:ml-30px sm:w-[125%] sm:h-full">
-                <img src="assets/images/resume-header.png" alt="" />
-                <div className="">
+            <div className="sm:flex-grow-0 sm:flex-shrink-0 min-h-px sm:basis-[50%] relative sm:max-w-[50%] w-full min-h-[1px] px-[15px]">
+              <div className="pt-[18px] ml-0 w-full h-full sm:pt-[18px] sm:ml-[30px] sm:w-[125%] sm:h-full relative visible animate-fadeInRight">
+                <img
+                  src="assets/images/resume-header.png"
+                  alt=""
+                  className="overflow-clip inline"
+                />
+                <div className="absolute top-[6%] -left-[5%] animate-spin-slow">
                   <img
                     src="assets/images/do-s-1.svg"
                     srcSet="assets/images/do-s-1.svg 1.2x"

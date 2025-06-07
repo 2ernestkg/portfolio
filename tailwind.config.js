@@ -21,5 +21,17 @@ module.exports = {
       md: "992px",
       lg: "1200px",
     },
+    extend: {
+      keyframes: {
+        fadeInRight: {
+          "0%": { opacity: 0, transform: "translateX(30%)" },
+          "100%": { opacity: 1, transform: "none" },
+        },
+      },
+      animation: {
+        fadeInRight: "fadeInRight 0.8s ease-in",
+        "spin-slow": "spin 10s linear infinite",
+      },
+    },
   },
 };
